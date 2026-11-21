@@ -29,7 +29,7 @@ One motorized mount and one controller box. Prices are approximate (late 2026).
 | M3 x 10 brass-tip set screws, 5-pack | Inner stop screws and foot screw | [McMaster 90418A111](https://www.mcmaster.com/90418A111) | 1 pack | ~$16 |
 | M3 x 12 socket head screws, 100-pack | Rear bar to block | [McMaster 91292A114](https://www.mcmaster.com/91292A114) | 1 pack | ~$7 |
 | Metric hex key set, 1.5-10 mm | All screws in the kit | [McMaster 5511A41](https://www.mcmaster.com/5511A41) | 1 | ~$7 |
-| Printed parts, MJF PA12 nylon | Final base block, rear bar, knob caps, clip, coupon | [JLC3DP](https://jlc3dp.com) | 1 set | ~$75 with shipping |
+| Printed parts, MJF PA12 nylon | Final base block, rear bar, knob caps, clip, test print | [JLC3DP](https://jlc3dp.com) | 1 set | ~$75 with shipping |
 
 Approximate total: about $425 for one mount and its box, before tax.
 

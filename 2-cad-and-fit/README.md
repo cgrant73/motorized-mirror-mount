@@ -19,14 +19,14 @@ The KM100 is the reference mount. The KM100T uses the same base block and rear b
 
 | STL in `stl/` | Part | Quantity per mount |
 |---|---|---|
-| `MIR_fit_coupon_v1.stl` | Fit coupon (Stage 1) | 1 |
+| `MIR_fit_coupon_v1.stl` | Mirror-fitting test print (Stage 1) | 1 |
 | `knob_extension_A_KM100_v4.stl`, `knob_extension_B_KM100_v4.stl` | Knob caps A and B, KM100 | 1 each |
 | `knob_extension_A_KM100T_v4.stl`, `knob_extension_B_KM100T_v4.stl` | Knob caps A and B, KM100T | 1 each |
 | `attachment_bracket_v4.stl` | Base block (block, clamp and post in one piece) | 1 |
 | `rear_bar_v4.stl` | Rear bar | 1 |
 | `MIR_cable_clip_v1.stl` | Cable clip | 1 |
 
-Print order, smallest to largest: coupon, knob caps, base block, rear bar and clip.
+Print order, smallest to largest: test print, knob caps, base block, rear bar and clip.
 
 ## OpenSCAD
 
@@ -34,7 +34,7 @@ The lab uses OpenSCAD 2021.01; newer versions also work. F5 previews, F6 renders
 
 | Part | File in `cad/` | Selector (top of file) |
 |---|---|---|
-| Fit coupon | `fit_coupon.scad` | none |
+| Mirror-fitting test print | `fit_coupon.scad` | none |
 | Knob cap A or B | `knob_extension.scad` | `which = 0` (A) or `1` (B) |
 | Base block | `attachment_bracket.scad` | `part = "block"` |
 | Cable clip | `attachment_bracket.scad` | `part = "cable_clip"` |
@@ -49,8 +49,8 @@ These are the parameters expected to change during fitting. Other parameters sta
 |---|---|---|---|---|
 | `mount_type` | `mount_params.scad`, line 16 | Mount the caps are generated for | `"KM100"` | same |
 | `knob_d` | `mount_params.scad`, line 32 (KM100) or 71 (KM100T) | Real knob diameter; estimated from drawings, to be measured | 14.8 / 13.5 | caliper value |
-| `kx_bore_clr` | `attachment_params.scad`, line 111 | Diametral clearance of the cap bore on the knob | 0.6 | best coupon ring (0.4-0.6) |
-| `ins3_d`, `ins4_d` | `attachment_params.scad`, lines 252-253 | M3 and M4 heat-set insert hole diameters | 3.9 / 5.5 | 4.0 / 5.6, or coupon result |
+| `kx_bore_clr` | `attachment_params.scad`, line 111 | Diametral clearance of the cap bore on the knob | 0.6 | best test-print ring (0.4-0.6) |
+| `ins3_d`, `ins4_d` | `attachment_params.scad`, lines 252-253 | M3 and M4 heat-set insert hole diameters | 3.9 / 5.5 | 4.0 / 5.6, or test-print result |
 | `kp_add_w` | `attachment_params.scad`, line 114 | Tooth-gap widening on the printed 66-tooth pulley | 0.1 | 0.2 |
 | `pk_clr` | `attachment_params.scad`, line 177 | Clearance per side around each motor in its pocket | 0.15 | 0.2-0.25 if the motor does not slide in |
 
