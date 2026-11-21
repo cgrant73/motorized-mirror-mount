@@ -12,27 +12,22 @@ Fiber coupling requires mirror angles within a few microradians, roughly 1/1000 
 
 ## Contents
 
-- [Status](#status)
-- [Stages](#stages)
+- [Plan](#stages)
 - [Repository layout](#repository-layout)
 - [Constraints](#constraints)
 - [Open questions](#open-questions)
 - [Glossary](#glossary)
 
-## Status
+## Plan
 
-CAD version v4.1. KM100 and KM100T geometry passes all 34 interference checks. No part of the motorized system has been built or run on hardware. The Radiant Dyes MDI-2-3025-M6 variant is provisional pending measurement.
-
-## Stages
-
-The work is divided into four sequential stages. Each stage folder holds its own README with inputs, outputs and completion criteria.
+The work is divided into four sequential steps:
 
 | Stage | Scope | Output | Folder |
 |---|---|---|---|
-| 1 | 3D printing: printer, slicer, tolerances, heat-set inserts | Measured fit-coupon results for the lab FDM printer | [1-3d-printing](1-3d-printing/README.md) |
-| 2 | Fit the printed parts to a real mount by adjusting CAD parameters | Knob caps, base block, rear bar and clip that fit the target mount; logged parameter values | [2-cad-and-fit](2-cad-and-fit/README.md) |
-| 3 | Bill of materials for one motorized mount and one controller box | A checked parts list, ready for approval | [3-parts](3-parts/README.md) |
-| 4 | Firmware, PC drivers and alignment software | Motors driven and encoders read from the lab PC | [4-automation](4-automation/README.md) |
+| 1 | 3D printing |  | [1-3d-printing](1-3d-printing/README.md) |
+| 2 | Fit a Real Mount | Knob caps, base block, rear bar and clip that fit the target mount; logged parameter values | [2-cad-and-fit](2-cad-and-fit/README.md) |
+| 3 | Electronics & Purchasing | A checked parts list, ready for approval | [3-parts](3-parts/README.md) |
+| 4 | Software & Testing | Motors driven and encoders read from the lab PC | [4-automation](4-automation/README.md) |
 
 ## Repository layout
 
@@ -47,20 +42,6 @@ The work is divided into four sequential stages. Each stage folder holds its own
 | [4-automation/](4-automation/README.md) | Software overview and SKR Pico quick reference |
 | [figures/](figures/README.md) | All rendered figures |
 
-## Constraints
-
-- Purchases are approved and submitted by Cameron Grant.
-- Final printed parts are MJF PA12 nylon from JLC3DP; the lab FDM printer is used for test prints only. The CAD defaults are tuned for MJF.
-- Geometry of the base block has been checked for collisions against the mount, motors and belts over the full tilt range. Changes outside the parameters listed in Stage 2 require re-running the interference checks.
-- The firmware and drivers live in the lab's `05_PyBirch_Drivers` folder, not in this repository.
-
-## Open questions
-
-- Real knob diameters of the lab's KM100 and KM100T mounts (CAD values are estimated from drawings).
-- Best FDM insert-hole and knob-ring clearances for the lab printer (Stage 1 output).
-- All MDI-2-3025-M6 dimensions (see [mounts/mdi-provisional](2-cad-and-fit/mounts/mdi-provisional/README.md)).
-- First power-up of the SKR Pico box with the `SKRP` pin map; no hardware test so far.
-
 ## Glossary
 
 | Term | Definition |
@@ -74,7 +55,5 @@ The work is divided into four sequential stages. Each stage folder holds its own
 | Set screw (grub screw) | Headless screw driven by a hex key; its tip bears on the mating part. |
 | Stepper motor | Motor that moves in discrete steps (200 per revolution, or finer with microstepping). Here: NEMA 11, 28 mm frame. |
 | Encoder | Sensor on the motor shaft that counts rotation (here 4000 counts per revolution), used to verify motion. |
-| SCAD / STL | `.scad`: parametric OpenSCAD source. `.stl`: exported mesh read by the slicer. |
-| FDM / MJF | Fused deposition modelling (lab printer, extruded filament) / Multi Jet Fusion (industrial powder-bed nylon, used for final parts). |
 | SKR Pico | BIGTREETECH controller board (RP2040 plus TMC stepper drivers) used in the controller box. |
 | PyBirch | The lab's Python instrument-driver framework; provides `MirrorTiltStage` and `MotionController`. |
