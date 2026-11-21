@@ -6,11 +6,7 @@ The lab owns one MDI-2-3025-M6. Its model and the attachment parts derived from 
 
 ## Plan
 
-**Inputs:** the lab's MDI mount (held by Cameron Grant), calipers, the measurement sheet below.
-
-**Output:** measured values for every numbered item on the sheet, recorded next to the provisional values.
-
-**Done when:** the measured values are entered in the `MDI-2-3025-M6` row of [`../../cad/mount_params.scad`](../../cad/mount_params.scad), the parts are regenerated, and the interference checks pass. Test printing follows only after that.
+Measure every numbered item on the sheet, enter the values in the `MDI-2-3025-M6` row of [`../../cad/mount_params.scad`](../../cad/mount_params.scad), regenerate the parts and re-run the interference checks. Test printing follows after that.
 
 ![MDI measurement sheet](MDI_measurement_sheet.png)
 

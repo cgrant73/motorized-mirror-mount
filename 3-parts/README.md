@@ -1,14 +1,6 @@
-# Stage 3: parts list
+# Stage 3: Electronics & Purchasing
 
-**Scope:** bill of materials for one motorized mount and one controller box, reconciled with the design after Stage 2.
-
-**Inputs:** the fitted design and parameter log from Stage 2; the list below.
-
-**Output:** a checked parts list (items, quantities, links, stock) and a final set of MJF STLs.
-
-**Done when:** the list matches the current design, every link resolves to an in-stock item, items already on order or in the lab are marked, and the list has been handed to Cameron Grant. Purchases are approved and submitted by Cameron Grant (or another lab member with ordering authority).
-
-Prices are approximate (late 2026).
+One motorized mount and one controller box. Prices are approximate (late 2026).
 
 ## Parts
 
@@ -41,7 +33,7 @@ Prices are approximate (late 2026).
 
 Approximate total: about $425 for one mount and its box, before tax.
 
-## Requirements for the printed-parts order
+## Printed-parts order
 
 - MJF hole sizes in the CAD (M3 insert 3.9 mm, M4 insert 5.5 mm), not the FDM test values.
 - Measured knob diameter entered in [`mount_params.scad`](../2-cad-and-fit/cad/mount_params.scad) and the caps re-exported.

@@ -1,12 +1,4 @@
-# Stage 4: automation software
-
-**Scope:** bring up the controller box and drive the mirror from the lab PC, first in simulation and then on hardware.
-
-**Inputs:** the lab's `05_PyBirch_Drivers` folder (copy available from Cameron Grant); an assembled controller box and motorized mount from Stage 3 for the hardware part.
-
-**Output:** both axes moved and both encoders read from Python on the lab PC.
-
-**Done when:** the driver test suite passes against the simulated box, and the bring-up checklist in `firmware/HARDWARE.md` has been completed on the real box together with Cameron Grant.
+# Stage 4: Software & Testing
 
 ## Architecture
 
@@ -36,5 +28,3 @@ Relevant tools: Python, `pyserial`, `pytest`.
 ## First power-up
 
 Before the SKR Pico runs `main.py` for the first time, its pin map is set to `SKRP` with the 24 V supply off and the encoders unplugged. The default pin map drives the encoder input pins as outputs (see [skr-pico-quick-reference.md, section 3](skr-pico-quick-reference.md#3-first-boot-before-the-encoders-or-the-24-v-are-connected)).
-
-None of this stage has been run on real hardware. Hardware bring-up is done jointly with Cameron Grant.

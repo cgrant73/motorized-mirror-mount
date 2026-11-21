@@ -1,12 +1,4 @@
-# Stage 2: fit the printed parts to a real mount
-
-**Scope:** iterate print, test fit, measure and adjust until every printed part fits the target mirror mount.
-
-**Inputs:** Stage 1 coupon results; the target mount (see [mounts](mounts/README.md)); the OpenSCAD source in [`cad/`](cad/); the lab FDM printer.
-
-**Output:** FDM test parts that fit, a log of every parameter change, and caliper measurements of the real mount.
-
-**Done when:** the knob caps and the base block fit the target mount by the criteria below, and the parameter log has been reviewed with Cameron Grant.
+# Stage 2: Fit a Real Mount
 
 ![The printed and bought parts](../figures/fig_parts_labelled.png)
 
@@ -51,7 +43,7 @@ The lab uses OpenSCAD 2021.01; newer versions also work. F5 previews, F6 renders
 
 ## Adjustable parameters
 
-These are the parameters expected to change during fitting. One parameter changes per iteration, and each change is logged. Other parameters stay fixed unless agreed with Cameron Grant, because the block geometry has been collision-checked against the mount.
+These are the parameters expected to change during fitting. Other parameters stay fixed, because the block geometry has been collision-checked against the mount.
 
 | Parameter | File and line (in `cad/`) | Controls | Current (MJF) | FDM test prints |
 |---|---|---|---|---|
@@ -82,6 +74,6 @@ Parts are not hand-filed to fit; the parameter is corrected so that the next pri
 
 ## Mount measurements
 
-The mount models come from manufacturer drawings, so some dimensions are estimates. Measured on the real mount with calipers: knob diameter (across the knurl crests), knob protrusion behind the back plate, side-leg width. A deviation of more than 0.2 mm from `mount_params.scad` is reviewed with Cameron Grant before the value is changed, since the interference checks ([`cad/extras/`](cad/extras/README.md)) may need to be re-run.
+The mount models come from manufacturer drawings, so some dimensions are estimates. Measured on the real mount with calipers: knob diameter (across the knurl crests), knob protrusion behind the back plate, side-leg width. A change of more than 0.2 mm to `mount_params.scad` means re-running the interference checks ([`cad/extras/`](cad/extras/README.md)).
 
 Next: [Stage 3](../3-parts/README.md).

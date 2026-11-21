@@ -1,15 +1,6 @@
-# Stage 1: 3D printing and the fit coupon
+# Stage 1: 3D Printing
 
-**Scope:** operate the lab FDM printer and slicer, measure printed parts to about 0.1 mm, and set heat-set inserts.
-Printer, filament and the printer safety walk-through are arranged with Cameron Grant.
-
-**Inputs:** [`MIR_fit_coupon_v1.stl`](../2-cad-and-fit/stl/MIR_fit_coupon_v1.stl), a 20 mm calibration cube, calipers, M3 and M4 heat-set inserts (McMaster 94459A130, 94459A150), a KM100 or KM100T mount.
-
-**Output:** a completed fit-coupon table (below) recorded in the lab notebook.
-
-**Done when:** a calibration cube and the fit coupon have been printed and measured, inserts have been set in the coupon, and the table is filled in and reviewed with Cameron Grant.
-
-## Topics covered
+## Reference values
 
 | Topic | Reference values |
 |---|---|

@@ -4,7 +4,7 @@ Burch Lab, Boston College. Project contact: Cameron Grant (Burch Lab, Room 125).
 
 A 3D-printed attachment that clamps onto a standard kinematic mirror mount (Thorlabs KM100 or KM100T) and drives both adjuster knobs with encoder-equipped NEMA 11 stepper motors through GT2 belts. A controller box (BIGTREETECH SKR Pico) runs the motors; a Python driver on the lab PC commands it, and an alignment routine maximizes the power coupled into an optical fiber.
 
-![The attachment on a Thorlabs KM100 mirror mount, rear view](figures/fig_hero_assembly.png)
+<img src="figures/fig_hero_assembly.png" alt="The attachment on a Thorlabs KM100 mirror mount, rear view" width="360">
 
 *The attachment (orange and yellow) on a Thorlabs KM100 mount (grey). The blue plate carries the mirror.*
 
@@ -12,10 +12,8 @@ Fiber coupling requires mirror angles within a few microradians, roughly 1/1000 
 
 ## Contents
 
-- [Plan](#stages)
+- [Plan](#plan)
 - [Repository layout](#repository-layout)
-- [Constraints](#constraints)
-- [Open questions](#open-questions)
 - [Glossary](#glossary)
 
 ## Plan
