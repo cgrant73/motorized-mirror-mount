@@ -1,0 +1,8 @@
+# Normalise text line endings
+* text=auto
+*.sh text eol=lf
+
+# Binary assets
+*.stl binary
+*.png binary
+*.pdf binary

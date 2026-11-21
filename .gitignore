@@ -1,0 +1,22 @@
+# OpenSCAD and temporary files
+*.scad.bak
+*.bak
+*~
+*.tmp
+*.log
+out/
+2-cad-and-fit/cad/extras/checks/out/
+
+# Slicer outputs
+*.gcode
+*.bgcode
+*.3mf
+
+# Python
+__pycache__/
+*.pyc
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
