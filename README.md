@@ -22,7 +22,7 @@ The work is divided into four sequential steps:
 
 | Stage | Scope | Output | Folder |
 |---|---|---|---|
-| 1 | 3D printing |  | [1-3d-printing](1-3d-printing/README.md) |
+| 1 | 3D printing | Best-fitting knob-ring and insert-hole sizes for the lab printer | [1-3d-printing](1-3d-printing/README.md) |
 | 2 | Fit a Real Mount | Knob caps, base block, rear bar and clip that fit the target mount; logged parameter values | [2-cad-and-fit](2-cad-and-fit/README.md) |
 | 3 | Electronics & Purchasing | A checked parts list, ready for approval | [3-parts](3-parts/README.md) |
 | 4 | Software & Testing | Motors driven and encoders read from the lab PC | [4-automation](4-automation/README.md) |
